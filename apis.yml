@@ -1,105 +1,95 @@
+aid: microsoft-package
 name: Microsoft Package APIs
-description: A collection of Microsoft Package-related APIs for managing and distributing software packages
-image: https://example.com/microsoft-package-logo.png
-url: https://learn.microsoft.com/package-management
-created: '2024-01-15'
-modified: '2024-01-15'
-apis:
-- name: NuGet Package API
-  description: API for managing .NET packages through NuGet Gallery
-  image: https://www.nuget.org/Content/gallery/img/logo-header.svg
-  humanUrl: https://www.nuget.org/
-  baseUrl: https://api.nuget.org/v3/index.json
-  tags:
-  - packages
-  - nuget
-  - dotnet
-  - libraries
-  properties:
-  - type: Documentation
-    url: https://docs.microsoft.com/nuget/api/overview
-  - type: OpenAPI
-    url: https://api.nuget.org/v3/swagger.json
-  - type: Authentication
-    url: https://docs.microsoft.com/nuget/api/authentication
-  contact:
-  - type: Support
-    url: https://www.nuget.org/policies/Contact
-  - type: Email
-    url: support@nuget.org
-- name: Windows Package Manager (WinGet) API
-  description: API for the Windows Package Manager client for discovering and installing applications
-  image: https://example.com/winget-logo.png
-  humanUrl: https://github.com/microsoft/winget-cli
-  baseUrl: https://winget.azureedge.net/cache
-  tags:
-  - windows
-  - package-manager
-  - winget
-  - applications
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/windows/package-manager/
-  - type: GitHub
-    url: https://github.com/microsoft/winget-cli
-  - type: REST API Reference
-    url: https://github.com/microsoft/winget-cli-restsource
-  contact:
-  - type: GitHub Issues
-    url: https://github.com/microsoft/winget-cli/issues
-- name: Microsoft Store API
-  description: API for managing app submissions and accessing Microsoft Store catalog
-  image: https://example.com/microsoft-store-logo.png
-  humanUrl: https://developer.microsoft.com/store
-  baseUrl: https://manage.devcenter.microsoft.com/v1.0/my/
-  tags:
-  - microsoft-store
-  - apps
-  - submissions
-  - commercial
-  properties:
-  - type: Documentation
-    url: https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
-  - type: Authentication
-    url: https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services#authentication
-  - type: API Reference
-    url: https://docs.microsoft.com/windows/uwp/monetize/
-  contact:
-  - type: Support
-    url: https://developer.microsoft.com/windows/support
-- name: Azure Artifacts Package API
-  description: API for managing packages in Azure Artifacts including NuGet, npm, Maven, and Python packages
-  image: https://example.com/azure-artifacts-logo.png
-  humanUrl: https://azure.microsoft.com/services/devops/artifacts/
-  baseUrl: https://pkgs.dev.azure.com/{organization}/
-  tags:
-  - azure
-  - artifacts
-  - packages
-  - devops
-  - feeds
-  properties:
-  - type: Documentation
-    url: https://docs.microsoft.com/rest/api/azure/devops/artifacts/
-  - type: OpenAPI
-    url: https://docs.microsoft.com/rest/api/azure/devops/artifacts/?view=azure-devops-rest-7.0
-  - type: Authentication
-    url: https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance
-  contact:
-  - type: Support
-    url: https://azure.microsoft.com/support/devops/
-maintainers:
-- name: Microsoft
-  email: opensource@microsoft.com
-  url: https://opensource.microsoft.com
+description: >-
+  A collection of Microsoft package management APIs covering NuGet, Windows
+  Package Manager (WinGet), Microsoft Store, and Azure Artifacts for managing
+  and distributing software packages across Microsoft platforms.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- microsoft
-- packages
-- package-management
-- nuget
-- winget
-- azure-artifacts
-- distribution
-include:
-- name: APIs.json
-  url: https://apisjson.org/format/apisjson_0.16.txt
+  - Package Management
+  - NuGet
+  - WinGet
+  - Azure Artifacts
+  - Microsoft
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-package/refs/heads/main/apis.yml
+created: '2024-01-15'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+apis:
+  - aid: microsoft-package:nuget-package-api
+    name: NuGet Package API
+    description: API for managing .NET packages through NuGet Gallery
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.nuget.org/
+    baseURL: https://api.nuget.org/v3/index.json
+    tags:
+      - Packages
+      - NuGet
+      - .NET
+      - Libraries
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/nuget/api/overview
+      - type: Authentication
+        url: https://learn.microsoft.com/en-us/nuget/api/authentication
+  - aid: microsoft-package:winget-api
+    name: Windows Package Manager (WinGet) API
+    description: API for the Windows Package Manager client for discovering and installing applications
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://learn.microsoft.com/en-us/windows/package-manager/
+    baseURL: https://winget.azureedge.net/cache
+    tags:
+      - Windows
+      - Package Manager
+      - WinGet
+      - Applications
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/windows/package-manager/
+      - type: GitHub Organization
+        url: https://github.com/microsoft/winget-cli
+  - aid: microsoft-package:microsoft-store-api
+    name: Microsoft Store API
+    description: API for managing app submissions and accessing Microsoft Store catalog
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
+    baseURL: https://manage.devcenter.microsoft.com/v1.0/my/
+    tags:
+      - Microsoft Store
+      - Apps
+      - Submissions
+      - Commercial
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
+      - type: Authentication
+        url: https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
+  - aid: microsoft-package:azure-artifacts-api
+    name: Azure Artifacts Package API
+    description: API for managing packages in Azure Artifacts including NuGet, npm, Maven, and Python packages
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://azure.microsoft.com/en-us/services/devops/artifacts/
+    baseURL: https://pkgs.dev.azure.com/{organization}/
+    tags:
+      - Azure
+      - Artifacts
+      - Packages
+      - DevOps
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/rest/api/azure/devops/artifacts/
+      - type: Authentication
+        url: https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance
+common:
+  - type: Portal
+    url: https://developer.microsoft.com/
+  - type: Terms of Service
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+  - type: Privacy Policy
+    url: https://privacy.microsoft.com/en-us/privacystatement
+  - type: Support
+    url: https://support.microsoft.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
