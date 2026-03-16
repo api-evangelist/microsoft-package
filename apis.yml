@@ -1,5 +1,5 @@
 aid: microsoft-package
-name: Microsoft Package APIs
+name: Microsoft Package
 description: >-
   A collection of Microsoft package management APIs covering NuGet, Windows
   Package Manager (WinGet), Microsoft Store, and Azure Artifacts for managing
