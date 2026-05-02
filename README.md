@@ -1,85 +1,92 @@
-# Microsoft Package APIs (microsoft-package)
-A collection of Microsoft Package-related APIs for managing and distributing software packages
+# Microsoft Package (microsoft-package)
+A collection of Microsoft package management APIs covering NuGet, Windows Package Manager (WinGet), Microsoft Store, and Azure Artifacts for managing and distributing software packages across Microsoft platforms.
 
-**URL:** [Visit APIs.json URL](https://learn.microsoft.com/package-management)
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/microsoft-package/refs/heads/main/apis.yml)
 
 ## Tags:
 
- - microsoft, packages, package-management, nuget, winget, azure-artifacts, distribution
+ - Azure Artifacts, Microsoft, NuGet, Package Management, WinGet
 
 ## Timestamps
 
-- **Created:** 2024-01-15 
-- **Modified:** 2024-01-15 
+- **Created:** 2024-01-15
+- **Modified:** 2026-04-28
 
 ## APIs
 
 ### NuGet Package API
-API for managing .NET packages through NuGet Gallery
+API for managing .NET packages through NuGet Gallery.
 
 **Human URL:** [https://www.nuget.org/](https://www.nuget.org/)
 
+**Base URL:** https://api.nuget.org/v3/index.json
 
 #### Tags:
 
- - packages, nuget, dotnet, libraries
+ - .NET, Libraries, NuGet, Packages
 
 #### Properties
 
-- [Documentation](https://docs.microsoft.com/nuget/api/overview)
-- [OpenAPI](https://api.nuget.org/v3/swagger.json)
-- [Authentication](https://docs.microsoft.com/nuget/api/authentication)
+- [Documentation](https://learn.microsoft.com/en-us/nuget/api/overview)
+- [Authentication](https://learn.microsoft.com/en-us/nuget/api/authentication)
 
 ### Windows Package Manager (WinGet) API
-API for the Windows Package Manager client for discovering and installing applications
+API for the Windows Package Manager client for discovering and installing applications.
 
-**Human URL:** [https://github.com/microsoft/winget-cli](https://github.com/microsoft/winget-cli)
+**Human URL:** [https://learn.microsoft.com/en-us/windows/package-manager/](https://learn.microsoft.com/en-us/windows/package-manager/)
 
+**Base URL:** https://winget.azureedge.net/cache
 
 #### Tags:
 
- - windows, package-manager, winget, applications
+ - Applications, Package Manager, Windows, WinGet
 
 #### Properties
 
-- [Documentation](https://learn.microsoft.com/windows/package-manager/)
-- [GitHub](https://github.com/microsoft/winget-cli)
-- [REST API Reference](https://github.com/microsoft/winget-cli-restsource)
+- [Documentation](https://learn.microsoft.com/en-us/windows/package-manager/)
+- [GitHub Organization](https://github.com/microsoft/winget-cli)
 
 ### Microsoft Store API
-API for managing app submissions and accessing Microsoft Store catalog
+API for managing app submissions and accessing Microsoft Store catalog.
 
-**Human URL:** [https://developer.microsoft.com/store](https://developer.microsoft.com/store)
+**Human URL:** [https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services](https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services)
 
+**Base URL:** https://manage.devcenter.microsoft.com/v1.0/my/
 
 #### Tags:
 
- - microsoft-store, apps, submissions, commercial
+ - Apps, Commercial, Microsoft Store, Submissions
 
 #### Properties
 
-- [Documentation](https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services)
-- [Authentication](https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services#authentication)
-- [API Reference](https://docs.microsoft.com/windows/uwp/monetize/)
+- [Documentation](https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services)
+- [Authentication](https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services)
 
 ### Azure Artifacts Package API
-API for managing packages in Azure Artifacts including NuGet, npm, Maven, and Python packages
+API for managing packages in Azure Artifacts including NuGet, npm, Maven, and Python packages.
 
-**Human URL:** [https://azure.microsoft.com/services/devops/artifacts/](https://azure.microsoft.com/services/devops/artifacts/)
+**Human URL:** [https://azure.microsoft.com/en-us/services/devops/artifacts/](https://azure.microsoft.com/en-us/services/devops/artifacts/)
 
+**Base URL:** https://pkgs.dev.azure.com/{organization}/
 
 #### Tags:
 
- - azure, artifacts, packages, devops, feeds
+ - Artifacts, Azure, DevOps, Packages
 
 #### Properties
 
-- [Documentation](https://docs.microsoft.com/rest/api/azure/devops/artifacts/)
-- [OpenAPI](https://docs.microsoft.com/rest/api/azure/devops/artifacts/?view=azure-devops-rest-7.0)
-- [Authentication](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)
+- [Documentation](https://learn.microsoft.com/en-us/rest/api/azure/devops/artifacts/)
+- [Authentication](https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance)
+
+## Common Properties
+
+- [Portal](https://developer.microsoft.com/)
+- [Terms of Service](https://www.microsoft.com/en-us/legal/terms-of-use)
+- [Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement)
+- [Support](https://support.microsoft.com/)
 
 ## Maintainers
 
-**FN:** Microsoft
+**FN:** Kin Lane
 
-**Email:** opensource@microsoft.com
+**Email:** kin@apievangelist.com
