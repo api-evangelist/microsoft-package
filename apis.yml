@@ -49,7 +49,7 @@ apis:
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/windows/package-manager/
-      - type: GitHub Organization
+      - type: GitHubOrganization
         url: https://github.com/microsoft/winget-cli
   - aid: microsoft-package:microsoft-store-api
     name: Microsoft Store API
@@ -89,9 +89,9 @@ apis:
 common:
   - type: Portal
     url: https://developer.microsoft.com/
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.microsoft.com/en-us/legal/terms-of-use
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Support
     url: https://support.microsoft.com/
