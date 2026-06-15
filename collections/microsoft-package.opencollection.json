@@ -1,0 +1,165 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "NuGet Server API (V3)",
+    "version": "3"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "ServiceIndex",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the V3 service index",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nuget.org/v3/index.json"
+          },
+          "docs": "Get the V3 service index"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search packages by keyword",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nuget.org/v3/query",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "skip",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "take",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "prerelease",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "semVerLevel",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "packageType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Search packages by keyword"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Registration",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get registration index for a package",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nuget.org/v3/registration5-semver1/:id/index.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get registration index for a package"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "PackageContent",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List package versions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nuget.org/v3/flatcontainer/:id/index.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List package versions"
+        },
+        {
+          "info": {
+            "name": "Download a package (.nupkg)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nuget.org/v3/flatcontainer/:id/:version/:id_lower.:version_lower.nupkg",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "version",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "id_lower",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "version_lower",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Download a package (.nupkg)"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
