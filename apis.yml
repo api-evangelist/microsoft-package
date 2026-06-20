@@ -5,7 +5,7 @@ description: >-
   Package Manager (WinGet), Microsoft Store, and Azure Artifacts for managing
   and distributing software packages across Microsoft platforms.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Azure Artifacts
   - Microsoft
@@ -21,7 +21,7 @@ apis:
     name: NuGet Package API
     description: >-
       API for managing .NET packages through NuGet Gallery.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.nuget.org/
     baseURL: https://api.nuget.org/v3/index.json
     tags:
@@ -38,7 +38,7 @@ apis:
     name: Windows Package Manager (WinGet) API
     description: >-
       API for the Windows Package Manager client for discovering and installing applications.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/windows/package-manager/
     baseURL: https://winget.azureedge.net/cache
     tags:
@@ -55,7 +55,7 @@ apis:
     name: Microsoft Store API
     description: >-
       API for managing app submissions and accessing Microsoft Store catalog.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
     baseURL: https://manage.devcenter.microsoft.com/v1.0/my/
     tags:
@@ -73,7 +73,7 @@ apis:
     description: >-
       API for managing packages in Azure Artifacts including NuGet, npm, Maven, and
       Python packages.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://azure.microsoft.com/en-us/services/devops/artifacts/
     baseURL: https://pkgs.dev.azure.com/{organization}/
     tags:
