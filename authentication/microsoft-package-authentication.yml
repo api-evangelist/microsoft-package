@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/microsoft-package-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  parameter: X-NuGet-ApiKey
+  description: Required only for publish/delete operations on nuget.org.
+  sources:
+  - openapi/microsoft-package-openapi.yml

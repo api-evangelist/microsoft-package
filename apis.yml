@@ -87,6 +87,12 @@ apis:
       - type: Authentication
         url: https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance
 common:
+  - type: VulnerabilityDisclosure
+    url: security/microsoft-package-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/microsoft-package-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-package-authentication.yml
   - type: Portal
     url: https://developer.microsoft.com/
   - type: TermsOfService
