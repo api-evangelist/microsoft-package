@@ -1,0 +1,42 @@
+openapi: 3.1.0
+info:
+  title: NuGet Server API (V3) PackageContent Registration API
+  description: HTTP endpoints for discovering, downloading, and publishing NuGet packages against nuget.org and compatible package sources. Entry point is the service index. Endpoints below cover service index, search, registration metadata, and package content (flat container).
+  version: '3'
+servers:
+- url: https://api.nuget.org/v3
+  description: nuget.org V3 API root
+security: []
+tags:
+- name: Registration
+paths:
+  /registration5-semver1/{id}/index.json:
+    get:
+      tags:
+      - Registration
+      summary: Get registration index for a package
+      operationId: getRegistrationIndex
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Registration index
+          content:
+            application/json:
+              schema:
+                type: object
+        '404':
+          description: Not found
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-NuGet-ApiKey
+      description: Required only for publish/delete operations on nuget.org.
+x-generated-from: https://learn.microsoft.com/en-us/nuget/api/overview
+x-generated-by: claude-genwave10-08-2026-05-23

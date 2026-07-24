@@ -1,0 +1,50 @@
+openapi: 3.1.0
+info:
+  title: NuGet Server API (V3) PackageContent ServiceIndex API
+  description: HTTP endpoints for discovering, downloading, and publishing NuGet packages against nuget.org and compatible package sources. Entry point is the service index. Endpoints below cover service index, search, registration metadata, and package content (flat container).
+  version: '3'
+servers:
+- url: https://api.nuget.org/v3
+  description: nuget.org V3 API root
+security: []
+tags:
+- name: ServiceIndex
+paths:
+  /index.json:
+    get:
+      tags:
+      - ServiceIndex
+      summary: Get the V3 service index
+      operationId: getServiceIndex
+      responses:
+        '200':
+          description: Service index
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceIndex'
+components:
+  schemas:
+    ServiceIndex:
+      type: object
+      properties:
+        version:
+          type: string
+        resources:
+          type: array
+          items:
+            type: object
+            properties:
+              '@id':
+                type: string
+                format: uri
+              '@type':
+                type: string
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-NuGet-ApiKey
+      description: Required only for publish/delete operations on nuget.org.
+x-generated-from: https://learn.microsoft.com/en-us/nuget/api/overview
+x-generated-by: claude-genwave10-08-2026-05-23

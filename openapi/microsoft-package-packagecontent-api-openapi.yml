@@ -1,0 +1,84 @@
+openapi: 3.1.0
+info:
+  title: NuGet Server API (V3) PackageContent API
+  description: HTTP endpoints for discovering, downloading, and publishing NuGet packages against nuget.org and compatible package sources. Entry point is the service index. Endpoints below cover service index, search, registration metadata, and package content (flat container).
+  version: '3'
+servers:
+- url: https://api.nuget.org/v3
+  description: nuget.org V3 API root
+security: []
+tags:
+- name: PackageContent
+paths:
+  /flatcontainer/{id}/index.json:
+    get:
+      tags:
+      - PackageContent
+      summary: List package versions
+      operationId: listPackageVersions
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Versions
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  versions:
+                    type: array
+                    items:
+                      type: string
+        '404':
+          description: Not found
+  /flatcontainer/{id}/{version}/{id_lower}.{version_lower}.nupkg:
+    get:
+      tags:
+      - PackageContent
+      summary: Download a package (.nupkg)
+      operationId: downloadPackage
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: version
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id_lower
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: version_lower
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Package content
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        '404':
+          description: Not found
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-NuGet-ApiKey
+      description: Required only for publish/delete operations on nuget.org.
+x-generated-from: https://learn.microsoft.com/en-us/nuget/api/overview
+x-generated-by: claude-genwave10-08-2026-05-23
