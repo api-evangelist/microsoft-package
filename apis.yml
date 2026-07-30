@@ -5,7 +5,20 @@ description: >-
   Package Manager (WinGet), Microsoft Store, and Azure Artifacts for managing
   and distributing software packages across Microsoft platforms.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-package.png
 tags:
   - Azure Artifacts
   - Microsoft
@@ -17,75 +30,115 @@ created: '2024-01-15'
 modified: '2026-04-28'
 specificationVersion: '0.19'
 apis:
-  - aid: microsoft-package:nuget-package-api
-    name: NuGet Package API
-    description: >-
-      API for managing .NET packages through NuGet Gallery.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://www.nuget.org/
-    baseURL: https://api.nuget.org/v3/index.json
-    tags:
-      - .NET
-      - Libraries
-      - NuGet
-      - Packages
-    properties:
-      - type: Documentation
-        url: https://learn.microsoft.com/en-us/nuget/api/overview
-      - type: Authentication
-        url: https://learn.microsoft.com/en-us/nuget/api/authentication
-  - aid: microsoft-package:winget-api
-    name: Windows Package Manager (WinGet) API
-    description: >-
-      API for the Windows Package Manager client for discovering and installing applications.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://learn.microsoft.com/en-us/windows/package-manager/
-    baseURL: https://winget.azureedge.net/cache
-    tags:
-      - Applications
-      - Package Manager
-      - Windows
-      - WinGet
-    properties:
-      - type: Documentation
-        url: https://learn.microsoft.com/en-us/windows/package-manager/
-      - type: GitHubOrganization
-        url: https://github.com/microsoft/winget-cli
-  - aid: microsoft-package:microsoft-store-api
-    name: Microsoft Store API
-    description: >-
-      API for managing app submissions and accessing Microsoft Store catalog.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
-    baseURL: https://manage.devcenter.microsoft.com/v1.0/my/
-    tags:
-      - Apps
-      - Commercial
-      - Microsoft Store
-      - Submissions
-    properties:
-      - type: Documentation
-        url: https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
-      - type: Authentication
-        url: https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
-  - aid: microsoft-package:azure-artifacts-api
-    name: Azure Artifacts Package API
-    description: >-
-      API for managing packages in Azure Artifacts including NuGet, npm, Maven, and
-      Python packages.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://azure.microsoft.com/en-us/services/devops/artifacts/
-    baseURL: https://pkgs.dev.azure.com/{organization}/
-    tags:
-      - Artifacts
-      - Azure
-      - DevOps
-      - Packages
-    properties:
-      - type: Documentation
-        url: https://learn.microsoft.com/en-us/rest/api/azure/devops/artifacts/
-      - type: Authentication
-        url: https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance
+- aid: microsoft-package:nuget-package-api
+  name: NuGet Package API
+  description: API for managing .NET packages through NuGet Gallery.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.nuget.org/
+  baseURL: https://api.nuget.org/v3/index.json
+  tags:
+  - .NET
+  - Libraries
+  - NuGet
+  - Packages
+  properties:
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/nuget/api/overview
+  - type: Authentication
+    url: https://learn.microsoft.com/en-us/nuget/api/authentication
+- aid: microsoft-package:winget-api
+  name: Windows Package Manager (WinGet) API
+  description: API for the Windows Package Manager client for discovering and installing applications.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://learn.microsoft.com/en-us/windows/package-manager/
+  baseURL: https://winget.azureedge.net/cache
+  tags:
+  - Applications
+  - Package Manager
+  - Windows
+  - WinGet
+  properties:
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/windows/package-manager/
+  - type: GitHubOrganization
+    url: https://github.com/microsoft/winget-cli
+- aid: microsoft-package:microsoft-store-api
+  name: Microsoft Store API
+  description: API for managing app submissions and accessing Microsoft Store catalog.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: >-
+    https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
+  baseURL: https://manage.devcenter.microsoft.com/v1.0/my/
+  tags:
+  - Apps
+  - Commercial
+  - Microsoft Store
+  - Submissions
+  properties:
+  - type: Documentation
+    url: >-
+      https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
+  - type: Authentication
+    url: >-
+      https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
+- aid: microsoft-package:azure-artifacts-api
+  name: Azure Artifacts Package API
+  description: >-
+    API for managing packages in Azure Artifacts including NuGet, npm, Maven, and Python packages.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://azure.microsoft.com/en-us/services/devops/artifacts/
+  baseURL: https://pkgs.dev.azure.com/{organization}/
+  tags:
+  - Artifacts
+  - Azure
+  - DevOps
+  - Packages
+  properties:
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/azure/devops/artifacts/
+  - type: Authentication
+    url: >-
+      https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance
+- aid: microsoft-package:microsoft-package-packagecontent-api
+  name: Microsoft Package PackageContent API
+  description: The PackageContent API from Microsoft Package — 2 operation(s) for packagecontent.
+  humanURL: https://www.nuget.org/
+  baseURL: https://api.nuget.org/v3/index.json
+  tags:
+  - PackageContent
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-package-packagecontent-api-openapi.yml
+- aid: microsoft-package:microsoft-package-registration-api
+  name: Microsoft Package Registration API
+  description: The Registration API from Microsoft Package — 1 operation(s) for registration.
+  humanURL: https://www.nuget.org/
+  baseURL: https://api.nuget.org/v3/index.json
+  tags:
+  - Registration
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-package-registration-api-openapi.yml
+- aid: microsoft-package:microsoft-package-search-api
+  name: Microsoft Package Search API
+  description: The Search API from Microsoft Package — 1 operation(s) for search.
+  humanURL: https://www.nuget.org/
+  baseURL: https://api.nuget.org/v3/index.json
+  tags:
+  - Search
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-package-search-api-openapi.yml
+- aid: microsoft-package:microsoft-package-serviceindex-api
+  name: Microsoft Package ServiceIndex API
+  description: The ServiceIndex API from Microsoft Package — 1 operation(s) for serviceindex.
+  humanURL: https://www.nuget.org/
+  baseURL: https://api.nuget.org/v3/index.json
+  tags:
+  - ServiceIndex
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-package-serviceindex-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/microsoft-package-agentic-access.yml
