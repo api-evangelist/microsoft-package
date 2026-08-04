@@ -1,0 +1,20 @@
+{
+  "provider": "microsoft-package",
+  "sources": [
+    "microsoft-package-packagecontent-api-openapi.yml",
+    "microsoft-package-registration-api-openapi.yml",
+    "microsoft-package-search-api-openapi.yml",
+    "microsoft-package-serviceindex-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-package-packagecontent-api-openapi.yml",
+    "microsoft-package-registration-api-openapi.yml",
+    "microsoft-package-search-api-openapi.yml",
+    "microsoft-package-serviceindex-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
