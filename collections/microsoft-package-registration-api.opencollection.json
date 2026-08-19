@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "NuGet Server API (V3) PackageContent Registration API",
+    "version": "3"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Registration",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get registration index for a package",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nuget.org/v3/registration5-semver1/:id/index.json",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get registration index for a package"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

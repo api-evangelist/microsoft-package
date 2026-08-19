@@ -1,0 +1,99 @@
+{
+  "item": [
+    {
+      "id": "1204d01d-7745-4a7e-aa7f-ea6db355b9fc",
+      "name": "ServiceIndex",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0e8ba23e-46e3-4af2-b786-ed4d4a583743",
+          "name": "Get the V3 service index",
+          "request": {
+            "name": "Get the V3 service index",
+            "description": {},
+            "url": {
+              "path": [
+                "index.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "99c45953-077b-4da6-9457-6f9a2d3782a1",
+              "name": "Service index",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "index.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"version\": \"string\",\n  \"resources\": [\n    {\n      \"@id\": \"http://TwUJHkmLEjtIEdsmQtWlGDuLLlTuw.qbcrAtWRLbu1PAGbASKkFaZ6gKPFCzfDy\",\n      \"@type\": \"string\"\n    },\n    {\n      \"@id\": \"https://MwMVg.lgieNjf0qtNecSNcatZnaDHfSSYDNjeIuE-YpulBObiZwr9nvM,8VFC7V\",\n      \"@type\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.nuget.org/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "d35d0406-5e3b-4991-a214-229a31725ec0",
+    "name": "NuGet Server API (V3) PackageContent ServiceIndex API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP endpoints for discovering, downloading, and publishing NuGet packages against nuget.org and compatible package sources. Entry point is the service index. Endpoints below cover service index, search, registration metadata, and package content (flat container).",
+      "type": "text/plain"
+    }
+  }
+}

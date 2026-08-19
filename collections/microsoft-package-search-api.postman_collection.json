@@ -1,0 +1,155 @@
+{
+  "item": [
+    {
+      "id": "c3da48ec-04ec-4fbb-b6a9-f99ee0a0c47c",
+      "name": "Search",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "04d8ceb4-dd1a-4137-8f55-db0852c49a7c",
+          "name": "Search packages by keyword",
+          "request": {
+            "name": "Search packages by keyword",
+            "description": {},
+            "url": {
+              "path": [
+                "query"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "disabled": false,
+                  "key": "take",
+                  "value": "20"
+                },
+                {
+                  "disabled": false,
+                  "key": "prerelease",
+                  "value": "false"
+                },
+                {
+                  "disabled": false,
+                  "key": "semVerLevel",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "packageType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "87a9c959-74ea-4608-b6c7-9ca6ede6af3b",
+              "name": "Search results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "query"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "skip",
+                      "value": "0"
+                    },
+                    {
+                      "key": "take",
+                      "value": "20"
+                    },
+                    {
+                      "key": "prerelease",
+                      "value": "false"
+                    },
+                    {
+                      "key": "semVerLevel",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "packageType",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"totalHits\": 4196,\n  \"data\": [\n    {\n      \"id\": \"string\",\n      \"version\": \"string\",\n      \"description\": \"string\",\n      \"totalDownloads\": 7891,\n      \"verified\": false\n    },\n    {\n      \"id\": \"string\",\n      \"version\": \"string\",\n      \"description\": \"string\",\n      \"totalDownloads\": 9235,\n      \"verified\": false\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.nuget.org/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "fed4d04d-a672-432f-853b-15a4769a82ff",
+    "name": "NuGet Server API (V3) PackageContent Search API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP endpoints for discovering, downloading, and publishing NuGet packages against nuget.org and compatible package sources. Entry point is the service index. Endpoints below cover service index, search, registration metadata, and package content (flat container).",
+      "type": "text/plain"
+    }
+  }
+}

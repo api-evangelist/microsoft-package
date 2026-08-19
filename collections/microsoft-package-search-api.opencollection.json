@@ -1,0 +1,61 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "NuGet Server API (V3) PackageContent Search API",
+    "version": "3"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search packages by keyword",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.nuget.org/v3/query",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "skip",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "take",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "prerelease",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "semVerLevel",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "packageType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Search packages by keyword"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
