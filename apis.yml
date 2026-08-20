@@ -53,6 +53,11 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/windows/package-manager/
   baseURL: https://winget.azureedge.net/cache
   tags:
+  - Application
+  - Package Manager
+  - Windows
+  - WinGet
+  tags_raw:
   - Applications
   - Package Manager
   - Windows
@@ -70,6 +75,11 @@ apis:
     https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services
   baseURL: https://manage.devcenter.microsoft.com/v1.0/my/
   tags:
+  - Application
+  - Commercial
+  - Microsoft Store
+  - Submissions
+  tags_raw:
   - Apps
   - Commercial
   - Microsoft Store
