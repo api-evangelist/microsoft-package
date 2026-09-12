@@ -38,7 +38,7 @@ tags:
   - NuGet
   - Package Management
   - WinGet
-url: https://raw.githubusercontent.com/api-evangelist/microsoft-package/refs/heads/main/apis.yml
+url: https://developer.microsoft.com/
 created: '2024-01-15'
 modified: '2026-04-28'
 specificationVersion: '0.23'
@@ -184,5 +184,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
-x-parent: microsoft
+x-parent: github
 x-relationship: product
