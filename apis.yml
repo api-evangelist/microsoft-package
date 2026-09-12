@@ -163,6 +163,8 @@ apis:
   - type: OpenAPI
     url: openapi/microsoft-package-serviceindex-api-openapi.yml
 common:
+  - type: Website
+    url: https://www.microsoft.com/
   - type: AgenticAccess
     url: agentic-access/microsoft-package-agentic-access.yml
   - type: VulnerabilityDisclosure
@@ -182,3 +184,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-parent: microsoft
+x-relationship: product

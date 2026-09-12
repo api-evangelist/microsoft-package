@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: NuGet Server API (V3) PackageContent ServiceIndex API
+  title: NuGet Server API (V3) PackageContent Service Index API
   description: HTTP endpoints for discovering, downloading, and publishing NuGet packages against nuget.org and compatible package sources. Entry point is the service index. Endpoints below cover service index, search, registration metadata, and package content (flat container).
   version: '3'
 servers:
