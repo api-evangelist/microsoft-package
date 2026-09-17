@@ -153,16 +153,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/microsoft-package-search-api-openapi.yml
-- aid: microsoft-package:microsoft-package-serviceindex-api
-  name: Microsoft Package ServiceIndex API
-  description: The ServiceIndex API from Microsoft Package — 1 operation(s) for serviceindex.
+- aid: microsoft-package:microsoft-package-service-index-api
+  name: Microsoft Package Service Index API
+  description: The Service Index API from Microsoft Package — 1 operation(s) for service index.
   humanURL: https://www.nuget.org/
   baseURL: https://api.nuget.org/v3/index.json
   tags:
-  - ServiceIndex
+  - Service Index
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-package-serviceindex-api-openapi.yml
+    url: openapi/microsoft-package-service-index-api-openapi.yml
 common:
   - type: Website
     url: https://www.microsoft.com/
