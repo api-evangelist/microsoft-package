@@ -159,6 +159,8 @@ apis:
   humanURL: https://www.nuget.org/
   baseURL: https://api.nuget.org/v3/index.json
   tags:
+  - ServiceIndex
+  tags_raw:
   - Service Index
   properties:
   - type: OpenAPI
