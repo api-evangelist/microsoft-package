@@ -1,4 +1,4 @@
-# Microsoft Package (microsoft-package)
+# Microsoft Package
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,119 +66,127 @@
 
 A collection of Microsoft package management APIs covering NuGet, Windows Package Manager (WinGet), Microsoft Store, and Azure Artifacts for managing and distributing software packages across Microsoft platforms.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/microsoft-package/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/microsoft-package/refs/heads/main/apis.yml)
+**Areas:** Azure Artifacts · Developer Tools · Microsoft · NuGet · Package Management · WinGet
 
-## Scope
+## Microsoft Package on APIs.io
 
-- **Type:** Index
+Everything profiled for Microsoft Package is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/microsoft-package/](https://apis.io/providers/microsoft-package/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (8)
 
-- Azure Artifacts
-- Microsoft
-- NuGet
-- Package Management
-- WinGet
+- [NuGet Package API](https://apis.io/apis/microsoft-package/nuget-package-api/) — API for managing .NET packages through NuGet Gallery.
+- [Windows Package Manager (WinGet) API](https://apis.io/apis/microsoft-package/winget-api/) — API for the Windows Package Manager client for discovering and installing applications.
+- [Microsoft Store API](https://apis.io/apis/microsoft-package/microsoft-store-api/) — API for managing app submissions and accessing Microsoft Store catalog.
+- [Azure Artifacts Package API](https://apis.io/apis/microsoft-package/azure-artifacts-api/) — API for managing packages in Azure Artifacts including NuGet, npm, Maven, and Python packages.
+- [Microsoft Package PackageContent API](https://apis.io/apis/microsoft-package/microsoft-package-packagecontent-api/) — The PackageContent API from Microsoft Package — 2 operation(s) for packagecontent.
+- [Microsoft Package Registration API](https://apis.io/apis/microsoft-package/microsoft-package-registration-api/) — The Registration API from Microsoft Package — 1 operation(s) for registration.
+- [Microsoft Package Search API](https://apis.io/apis/microsoft-package/microsoft-package-search-api/) — The Search API from Microsoft Package — 1 operation(s) for search.
+- [Microsoft Package Service Index API](https://apis.io/apis/microsoft-package/microsoft-package-service-index-api/) — The Service Index API from Microsoft Package — 1 operation(s) for service index.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-15
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### NuGet Package API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-API for managing .NET packages through NuGet Gallery.
+- [Microsoft Package Agentic Access](https://apis.io/agentic-access/microsoft-package/microsoft-package-agentic-access/)
 
-- **Human URL:** [https://www.nuget.org/](https://www.nuget.org/)
-- **Base URL:** `https://api.nuget.org/v3/index.json`
+#### Collections (5)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- .NET
-- Libraries
-- NuGet
-- Packages
+- [NuGet Server API (V3)](https://apis.io/collections/microsoft-package/open-microsoft-package/)
+- [NuGet Server API (V3) PackageContent API](https://apis.io/collections/microsoft-package/open-microsoft-package-packagecontent-api/)
+- [NuGet Server API (V3) PackageContent Registration API](https://apis.io/collections/microsoft-package/open-microsoft-package-registration-api/)
+- [NuGet Server API (V3) PackageContent Search API](https://apis.io/collections/microsoft-package/open-microsoft-package-search-api/)
+- [NuGet Server API (V3) PackageContent ServiceIndex API](https://apis.io/collections/microsoft-package/open-microsoft-package-serviceindex-api/)
 
-#### Properties
+#### Security (3)
 
-- [Documentation](https://learn.microsoft.com/en-us/nuget/api/overview)
-- [Authentication](https://learn.microsoft.com/en-us/nuget/api/authentication)
-- [Postman Collection](collections/microsoft-package.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-package.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Windows Package Manager (WinGet) API
+- [Microsoft Package Authentication](https://apis.io/security/microsoft-package/microsoft-package-authentication/)
+- [Microsoft Package Domain Security](https://apis.io/security/microsoft-package/microsoft-package-domain-security/)
+- [Microsoft Package Vulnerability Disclosure](https://apis.io/security/microsoft-package/microsoft-package-vulnerability-disclosure/)
 
-API for the Windows Package Manager client for discovering and installing applications.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://learn.microsoft.com/en-us/windows/package-manager/](https://learn.microsoft.com/en-us/windows/package-manager/)
-- **Base URL:** `https://winget.azureedge.net/cache`
+Published plans, tiers and prices.
 
-#### Tags
+- [Microsoft Package Plans Pricing](https://apis.io/plans/microsoft-package/microsoft-package-plans-pricing/)
 
-- Applications
-- Package Manager
-- Windows
-- WinGet
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://learn.microsoft.com/en-us/windows/package-manager/)
-- [GitHub Organization](https://github.com/microsoft/winget-cli)
-- [Postman Collection](collections/microsoft-package.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-package.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Microsoft Package Rate Limits](https://apis.io/rate-limits/microsoft-package/microsoft-package-rate-limits/)
 
-### Microsoft Store API
+#### FinOps (1)
 
-API for managing app submissions and accessing Microsoft Store catalog.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services](https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services)
-- **Base URL:** `https://manage.devcenter.microsoft.com/v1.0/my/`
+- [Microsoft Package Finops](https://apis.io/finops/microsoft-package/microsoft-package-finops/)
 
-#### Tags
+## Where to find this API
 
-- Apps
-- Commercial
-- Microsoft Store
-- Submissions
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services)
-- [Authentication](https://learn.microsoft.com/en-us/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services)
-- [Postman Collection](collections/microsoft-package.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-package.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Azure Artifacts Package API
-
-API for managing packages in Azure Artifacts including NuGet, npm, Maven, and Python packages.
-
-- **Human URL:** [https://azure.microsoft.com/en-us/services/devops/artifacts/](https://azure.microsoft.com/en-us/services/devops/artifacts/)
-- **Base URL:** `https://pkgs.dev.azure.com/{organization}/`
-
-#### Tags
-
-- Artifacts
-- Azure
-- DevOps
-- Packages
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/rest/api/azure/devops/artifacts/)
-- [Authentication](https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance)
-- [Postman Collection](collections/microsoft-package.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-package.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Portal](https://developer.microsoft.com/)
-- [Terms of Service](https://www.microsoft.com/en-us/legal/terms-of-use)
-- [Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement)
+- [Website](https://www.microsoft.com/)
 - [Support](https://support.microsoft.com/)
+- [Terms of service](https://www.microsoft.com/en-us/legal/terms-of-use)
+- [Privacy policy](https://privacy.microsoft.com/en-us/privacystatement)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 31.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 42.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 28.9 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/microsoft-package/](https://apis.io/providers/microsoft-package/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Microsoft Package: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/microsoft-package/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
